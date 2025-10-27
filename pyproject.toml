@@ -1,0 +1,22 @@
+[project]
+name = "reproevolve"
+version = "0.1.0"
+description = "A minimal implementation of AlphaEvolve with Islands"
+authors = [
+    {name = "Emmett Bicker",email = "emmettbicker@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic (>=2.11.9,<3.0.0)",
+    "numpy (<=1.26.4)",
+    "matplotlib (>=3.8.0)",
+    "litellm (>=1.77.4,<2.0.0)",
+    "scipy (>=1.13)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
