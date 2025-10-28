@@ -22,10 +22,20 @@ The main control loop exists in `reproevolve/controller.py`. The controller's `r
 - Update the database and potentially migrate this new program to a new island
 
 # Results
-After running for 1,400 iterations, I got the following program:
-![A depiction of a circle packing with a sum of radii=2.627](/images/best_program.png)
+After running the algorithm for 2,500 iterations, the final program achieves a fitness of ~2.629
 
-The score is 99.7% of what OpenEvolve was able to achieve. The remaining discrepancy is likely based on small adjustments to their algorithm causing it to converge faster, such as sampling better programss as parents more frequently. However, this repository is mainly intended as an educational repository and I am happy with its current level of performance!
+<p align="center">
+  <img width="768" height="734" alt="Circle Packing with 2.629" src="https://github.com/user-attachments/assets/6c00f380-9aea-4735-9a3d-9295a68ccd97" />
+</p>
+
+This is a visualization of the best program's fitness over time:
+<p align="center">
+<img width="554" height="340" alt="Graph of performance over time" src="https://github.com/user-attachments/assets/1f0061a6-2700-4423-b2e3-de6114deed2e" />
+</p>
+
+
+
+The score is 99.8% of what OpenEvolve was able to achieve (2.634). There are a few things OpenEvolve does to speed up convergence, such as having a maximum of 60 programs in the database at the same time, deliberately sampling higher-performing parents, and different methods for island migration methods. However, this repository is mainly intended for educational purposes, so  I am happy with its current level of performance!
 
 # Example Run Command
 `poetry run python main.py --initial-program example_initial_program.py --evaluator-program example_evaluator.py`
