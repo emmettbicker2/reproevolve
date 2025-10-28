@@ -1,6 +1,6 @@
 # ReproEvolve
 
-This repository is a minimal reproduction of OpenEvolve. This project aims to have code that clearly and legibly represents the key theoretical concepts behind OpenEvolve: the MAP-Elites database, island-based evolution, the evaluator, and the general control flow. It took me a long time to understand these theoretical concepts by reading OpenEvolve's code, so I wanted to make a codebase that prioritizes clear abstractions of the theoretical concepts behind OpenEvolve.
+This repository is a minimal reproduction of AlphaEvolve. This project aims to have code that clearly and legibly represents the key theoretical concepts behind AlphaEvolve/OpenEvolve: the MAP-Elites database, island-based evolution, the evaluator, and the general control flow. It took me a long time to understand these theoretical concepts by reading OpenEvolve's code, so I wanted to make a codebase that prioritizes clear abstractions of the theoretical concepts behind OpenEvolve.
 
 OpenEvolve has 9,086 lines of Python code (as of October 27th, 2025), and this repository has 999 lines of Python code. I hope the reduction makes this repository easier to understand.
 
